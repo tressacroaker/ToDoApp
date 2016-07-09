@@ -1,0 +1,44 @@
+body {
+  background-image: url("http://s3.amazonaws.com/www.ceo.com/wp-content/uploads/2013/04/check-list_to-do.png");
+  background-size: cover;
+  font-family: 'Oswald';
+  color: rgba(10, 16, 19, 0.91)
+}
+
+input {
+  font-family: 'Oswald';
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h3 {
+  margin: 15px;
+  font-size: 25px;
+}
+
+header {
+  width: 90vh;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(66, 65, 77, 0.77);
+}
+button {
+  position: relative;
+  bottom: 2px;
+  margin: 0 5px 5px 5px;
+  font-size: 25px;
+}
+
+form {
+  display: inline-block;
+}
+.container {
+  width: 40vw;
+  text-align: center;
+  margin: auto;
+  background-color: rgba(94, 127, 172, 0.81);
+  min-height: 80vh;
+}
