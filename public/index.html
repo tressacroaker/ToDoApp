@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body ng-controller="mainCtrl">
+    <header>
+      <h1> Tressa's To Do List </h1>
+    </header>
+    <div id="outerBox">
+      <br>
+      <br>
+      <h3> Sort by: </h3>
+        <button type="button" ng-click="sorter='+'">Ascending</button>
+        <button type="button" ng-click="sorter='-'">Descending</button>
+      <br>
+      <br>
+      <input type="text" ng-model="filterer" placeholder="Filter By...">
+      <br>
+      <h4>Add new item here:<h4>
+      <input type="text" ng-model="newitemer" placeholder="New item">
+      <br>
+      <ul>
+        <div ng-repeat="thing in list | orderBy: sorter | filter: filterer">
+
+            <li ng-hide="updatething" ng-dblclick="updatething = true"> {{thing}}</li>
+            <button type="button" ng-click="delete(thing)">[x]</button>
+            <form ng-show="updatething" ng-submit="updatething = false">
+            <input type="text" ng-model="thing">
+            </form>
+          </div>
+        </ul>
+
+    </div>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script> -->
+    <script src="app.js"></script>
+    <script src="mainCtrl.js"></script>
+    <script src="mainServ.js"></script>
+    <script src="styles.css"></script>
+  </body>
+</html>

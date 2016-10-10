@@ -1,0 +1,30 @@
+header {
+  height: 15vh;
+  width: 100vw;
+  background-color: #585F65;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  padding-top: 26px;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+#outerBox {
+  background-color: #EAEAEA;
+  height: 85vh;
+  width: 100vw;
+  text-align: center;
+}
+
+h3, h4 {
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 500px;
+}
